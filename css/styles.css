@@ -1,0 +1,465 @@
+html {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #7f7f7f;
+}
+
+body, p, div, h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	color: #23262b;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 3.4375em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.left, .right {
+	display:  table-cell;
+	vertical-align: top;
+}
+
+.left {
+	background-color: #f3f3f3;
+	width: auto;
+}
+
+.right {
+	width: 310px;
+}
+
+.left .content {
+	width:  1180px;
+	margin: 105px auto 40px auto;
+}
+
+.left .content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.left .main-header {
+	margin-bottom: 60px;
+}
+
+.left .main-header h1 {
+    margin-bottom: 39px;
+}
+
+.left .main-header p {
+	font-size: 1.875em;
+	font-weight: 300;
+}
+
+.tile {
+	width: 260px;
+	height: 444px;
+	text-align: center;
+	padding: 25px 20px 0 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-right: 20px;
+	border-radius: 10px;
+	background-color: #f3f3f3;
+	border: 1px dashed #b3b8bb;
+    cursor: pointer;
+}
+
+.tile:hover {
+	background: #fff;
+	border: 1px dashed #56a0d5;
+}
+
+.tile.selected {
+	background-color: #06152d;
+	border: none;
+}
+
+.tile.security {
+	margin-right: 0;
+	float: right;
+}
+
+.tile.development {
+	margin-right: 33px;
+}
+
+.ampersand {
+	font-size: 3em;
+	font-weight: 700;
+	color: #b3b8bb;	
+}
+
+.left .ampersand {
+	float: left;
+	height: 444px;
+	line-height: 444px;
+}
+
+.tile header {
+    margin-bottom: 30px;
+}
+
+.tile h2 {
+	line-height: 1em;
+	height: 48px;
+	color: #23262b;
+}
+
+.tile.selected h2 {
+	color: #fff;
+}
+
+.tile .icon {
+	margin: 0 auto 36px auto;
+	width: 102px;
+	height: 94px;
+}
+
+.tile.design .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") 0 0 no-repeat;
+}
+
+.tile.design.selected .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -102px 0 no-repeat;
+}
+
+.tile.cms .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -204px 0 no-repeat;
+}
+
+.tile.cms.selected .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -306px 0 no-repeat;
+}
+
+.tile.development .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -408px 0 no-repeat;
+}
+
+.tile.development.selected .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -510px 0 no-repeat;
+}
+
+.tile.security .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -612px 0 no-repeat;
+}
+
+.tile.security.selected .icon{
+	background: url("../gfx/big_offer_icons_sheet.png") -714px 0 no-repeat;
+}
+
+.tile .description {
+	line-height: 1.3em;
+	font-size: 1.125em;
+	height: 120px;
+    margin-bottom: 25px;
+}
+
+.tile .price {
+	margin: 0 0 5px 0;
+	color: #56a0d5;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../gfx/check_radio_sheet.png") -38px 0 no-repeat;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background: url("../gfx/check_radio_sheet.png") -57px 0 no-repeat;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../gfx/check_radio_sheet.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background: url("../gfx/check_radio_sheet.png") -19px 0 no-repeat;
+}
+
+.right {
+	position: relative;
+	text-align: center;
+	padding: 40px 20px 40px 20px;
+	box-sizing: border-box;
+}
+
+.right header {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.right header h2 {
+    margin-bottom: 45px;
+}
+
+.right input {
+	width: 100%;
+	box-sizing: border-box;
+	height: 50px;
+	margin: 0;
+	font-family: 'Lato', sans-serif;	
+}
+
+.contact-details {
+	margin-bottom: 110px;
+}
+
+.contact-details input {
+	border: 1px solid #ebebeb;
+	border-bottom: none;
+	font-weight: 400;
+	font-size: 0.9375em;
+	padding: 0 10px 0 42px;
+	background-position: 11px 16px;
+	background-repeat:  no-repeat;
+}
+
+.contact-details input:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.contact-details input:last-child {
+	border-bottom: 1px solid #ebebeb;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.contact-details input[name="name"] {
+	background-image: url("../gfx/user.png");
+}
+
+.contact-details input[name="email"] {
+	background-image: url("../gfx/email.png");
+}
+
+.contact-details input[name="phone"] {
+	background-image: url("../gfx/phone.png");
+}
+
+.customer-selection {
+	margin-bottom: 100px;
+}
+
+.customer-selection .icon {
+	width: 64px;
+	height: 56px;
+	margin: 0 auto 10px auto;
+}
+
+.customer-selection .obligatory .icon {
+	background:  url("../gfx/small_offer_icons_sheet.png") 0 0 no-repeat;
+}
+
+.customer-selection .optional .icon {
+	background:  url("../gfx/small_offer_icons_sheet.png") -192px 0 no-repeat;
+}
+
+.customer-selection .offer-name {
+	color: #b3b8bb;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.customer-selection .ampersand, .customer-selection .obligatory {
+	margin-bottom: 30px;
+}
+
+.total-cost {
+	color: #329c5b;
+	font-size: 0.875em;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.total-cost .amount {
+	font-weight: 700;
+	font-size: 3.4285em;
+}
+
+.right input[type="submit"] {
+	border: none;
+	color: #fff;
+	background-color: #329c5b;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	background-image: url("../gfx/arrow.png");
+	background-repeat: no-repeat;
+	background-position:  right 16px center;
+}
+
+@media (max-width: 1550px) {    
+    .left .content {
+        width: 90%;
+        box-sizing: border-box;
+    }
+    
+    .tile {
+        width: 30%;
+    }
+    
+    .tile.design, .tile.cms {
+        margin-right: 5%;
+    }
+    
+    .tile.development {
+        float: right;
+        margin-right: 0;
+    }
+    
+    .offer-obligatory {
+        margin-bottom: 20px;
+    }
+    
+    .offer-obligatory:after {
+        content: "";
+        display: block;
+        clear: both;
+    } 
+    
+    .left .ampersand {
+        float: none;
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .tile.security {
+        float: none;       
+    } 
+}
+
+@media (max-width: 1200px) {
+    .left .content {
+        margin: 40px 5%;
+    }
+    
+    .tile {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    
+    .tile.development {
+        margin-bottom: 0px;
+    }
+    
+    .tile > * {
+        vertical-align: middle;
+    }
+    
+    .tile header {
+        display: inline-block;
+        width: 30%;
+        margin: 0 3% 0 0;
+    }
+    
+    .tile header .icon {
+        margin-bottom: 10px;
+    }
+    
+    .tile h2 {
+        height: auto;
+    }
+    
+    .tile .description {
+        display: inline-block;
+        width: 40%;
+        height: auto;
+        box-sizing: border-box;
+        text-align: left;
+        margin-right: 3%;
+    }
+    
+    .tile .price {
+        display: inline-block;
+        width: 15%;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .left .ampersand {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    
+    .left, .right {
+        display: block;
+        width: 100%;
+    }
+    
+    .left .content {
+        margin: 0;
+        padding: 40px 5%;
+        width: 100%;
+    }
+    
+    .right header {
+        width: 100%;
+    }
+    
+    .right .contact-details {
+        margin-bottom: 30px;
+    }
+    
+    .right .customer-selection {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .tile header, .tile .description, .tile .price {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}

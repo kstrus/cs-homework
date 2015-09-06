@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>Our offer</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+			
+            <section class="left">
+				<div class="content">
+					<header class="main-header">
+						<h1>Take a look at our offer</h1>
+						<p>If you are looking to get your website, we will be happy to help you with that. Just pick one of the packages and submit the form.</p>
+						<p>We will respond in 48h.</p>
+					</header>
+                    
+                    <div class="offer-obligatory">
+                        <div class="tile design selected" data-offer="design">
+                            <header>
+                                <div class="icon"></div>
+                                <h2>Website design</h2>
+                            </header>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="price" data-price="1000">&#8364 1000</p>
+                            <input type="radio" name="offer" value="design" id="design-radio" checked>
+                            <label for="design-radio"></label>
+                        </div>
+                        <div class="tile cms" data-offer="cms">
+                            <header>
+                                <div class="icon"></div>
+                                <h2>Basic CMS package</h2>
+                            </header>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="price" data-price="2500">&#8364 2500</p>
+                            <input type="radio" name="offer" value="cms" id="cms-radio">
+                            <label for="cms-radio"></label>
+                        </div>
+                        <div class="tile development" data-offer="development">
+                            <header>
+                                <div class="icon"></div>
+                                <h2>Custom app development</h2>
+                            </header>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                            <p class="price" data-price="5000">&#8364 5000</p>
+                            <input type="radio" name="offer" value="development" id="development-radio">
+                            <label for="development-radio"></label>
+                        </div>
+                    </div>    
+                        
+					<div class="ampersand">&amp</div>
+					<div class="tile security selected">
+						<header>
+							<div class="icon"></div>
+							<h2>Security audit</h2>
+						</header>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						<p class="price" data-price="1000">&#8364 1000</p>
+						<input type="checkbox" name="offer-addition" value="security" id="security-checkbox" checked>
+						<label for="security-checkbox"></label>
+					</div>
+				</div>
+			</section>
+			
+            <section class="right">
+				<header>
+					<h2>Please fill the form details</h2>
+				</header>
+				<form class="contact-details">
+					<input type="text" name="name" placeholder="First & last name"/>
+					<input type="email" name="email" placeholder="E-mail address"/>
+					<input type="tel" name="phone" placeholder="Phone number"/>
+				</form>
+				<div class="customer-selection">
+					<div class="obligatory">
+						<div class="icon"></div>
+						<p class="offer-name">Website design</p>
+					</div>
+					<div class="ampersand">&amp</div>
+					<div class="optional">
+						<div class="icon"></div>
+						<p class="offer-name">Security audit</p>
+					</div>
+				</div>
+				<div class="total-cost">
+					<p>Estimated cost:</p>
+					<p class="amount">&#8364 <span>2000</span></p>
+				</div>
+				<input type="submit" value="Send request"/>
+			</section>
+		</div>
+        
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
+</html>
