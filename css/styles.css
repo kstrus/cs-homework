@@ -71,9 +71,8 @@ h2 {
 
 .tile {
 	width: 260px;
-	height: 444px;
 	text-align: center;
-	padding: 25px 20px 0 20px;
+	padding: 25px 20px 20px 20px;
 	box-sizing: border-box;
 	float: left;
 	margin-right: 20px;
@@ -329,44 +328,28 @@ input[type="checkbox"]:checked + label {
     }
     
     .tile {
-        width: 30%;
+        width: 22%;
     }
     
-    .tile.design, .tile.cms {
-        margin-right: 5%;
+    .offer-obligatory .tile{
+		margin-right: 2%;
     }
-    
-    .tile.development {
-        float: right;
-        margin-right: 0;
-    }
-    
-    .offer-obligatory {
-        margin-bottom: 20px;
-    }
-    
-    .offer-obligatory:after {
-        content: "";
-        display: block;
-        clear: both;
-    } 
-    
-    .left .ampersand {
-        float: none;
-        display: inline-block;
-        width: 30%;
-        height: auto;
-        line-height: normal;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .tile.security {
-        float: none;       
-    } 
+	
+	.tile .description {
+		height: 160px;
+	}
+
+	.tile h2 {
+		font-size: 1.2em;
+	}
+	
+	.left .ampersand {
+		width: 4%;
+		text-align: center;
+	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     .left .content {
         margin: 40px 5%;
     }
@@ -399,6 +382,7 @@ input[type="checkbox"]:checked + label {
     
     .tile h2 {
         height: auto;
+		font-size: 1.5em;
     }
     
     .tile .description {
@@ -419,8 +403,10 @@ input[type="checkbox"]:checked + label {
     
     .left .ampersand {
         width: 100%;
-        margin-bottom: 20px;
+        margin: 20px 0;
         text-align: center;
+		height: auto;
+		line-height: normal;
     }
 }
 
